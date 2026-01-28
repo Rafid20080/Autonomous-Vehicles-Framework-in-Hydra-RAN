@@ -1,0 +1,18 @@
+# Create a virtual environment named `.venv` in your project root
+python3 -m venv .venv
+
+# Activate the environment
+# On Linux/macOS:
+source .venv/bin/activate
+# On Windows (PowerShell):
+.venv\Scripts\activate
+
+# Your terminal prompt should now show (.venv)
+
+
+
+poetry init
+# Follow prompts. Then, add key libraries:
+poetry add torch torchvision pytorch-lightning
+poetry add numpy pandas scikit-learn
+poetry add matplotlib seaborn plotly
